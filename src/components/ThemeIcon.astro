@@ -50,6 +50,7 @@
 
   document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
 
+// https://stackoverflow.com/questions/56393880/how-do-i-detect-dark-mode-using-javascript
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
         const newColorScheme = event.matches ? "dark" : "light";
          if (newColorScheme === 'light') {
